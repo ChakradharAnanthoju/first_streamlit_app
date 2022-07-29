@@ -41,7 +41,7 @@ except URLError as e:
   
 # Importing Snowflake
 # Allow end user to add a fruiit to the list 
-Def insert_row_snowflake(new_fruit):
+def insert_row_snowflake(new_fruit):
   with my_cnx.cursor() as my_cur:
     my_cur.execute("insert into FRUIT_LOAD_LIST values('from streamlit')")
     return "thanks for adding + new_fruit"
